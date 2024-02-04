@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Input from "./Input.jsx";
 
 const App = () => {
   const [tasks, setTasks] = useState([]);
@@ -13,6 +14,7 @@ const App = () => {
 
   return (
     <main>
+      <Input />
       {tasks.map((task) => (
         <span className="task" key={task.id}>
           {task.description}
